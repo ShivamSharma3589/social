@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+}
+body{
+    padding: 10px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    background-color: #ffefff;
+}
+
+/* heading goes here */
+.center{
+    text-align: center;
+    font-family: 'Sofia', cursive;
+}
+h1{
+    width: max-content;text-shadow: 2px 1px 5px rgb(255, 0, 255),2px 2px 5px rgb(210, 0, 210);
+    color: white;
+    background-color: black;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+h2{
+    color: #ffe300;
+    text-shadow: 1px 1px 10px rgb(255, 125, 10),-1px -1px 10px rgb(255, 125, 10);
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 250, 239);
+    justify-content: space-evenly;
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 4px black;
+}
+.box{
+    width:30%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 4px black;
+}
+.box:hover,box a:hover{
+    box-shadow: 0 0 4px rgb(146, 1, 103);
+    text-shadow: 0 0 4px rgb(146, 1, 103);
+}
+.box img{
+    display: block;
+    padding: 15px;
+    max-width: 60%;
+    margin:0 auto;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+a div{
+    text-align: center;
+}
+
+/* footer goes here */
+footer{
+    background-color: lightgray;
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 40px;
+}
+footer a{
+    text-shadow: 1px 1px 5px teal,-1px -1px 5px teal;
+    color: white;
+}
+footer a:hover{
+    text-shadow: 1px 1px 5px rgb(1, 255, 255),-1px -1px 5px rgb(6, 255, 255);
+    color: white;
+}
+/* media queries go here */
+
+@media (max-width:800px){
+    html{
+        font-size:13px;
+    }
+    .box img{
+        width:80%;
+    }
+}
+
+/* for 600px */
+
+@media (max-width:700px){
+    html{
+        font-size: 10px;
+    }
+    .box{
+        min-width: 45%;
+    }
+    .box img{
+        min-width: 100%;
+    }
+}
